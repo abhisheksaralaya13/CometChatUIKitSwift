@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CometChatUIKitSwift_Tests' do
+  pod 'CometChatUIKitSwift', :path => '../'
+  
+  
+end
