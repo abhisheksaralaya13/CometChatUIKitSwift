@@ -8,35 +8,22 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CometChatUIKitSwift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CometChatUIKitSwift.'
+  s.version          = '4.0.0-beta3'
+  s.summary          = 'CometChat Swift UI Kit is a collection of custom UI Components'
+  s.description      = 'The UIKit designed to build text , chat  features in your application. The UI Kit is developed to keep developers in mind and aims to reduce development efforts significantly'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/abhisheksaralaya13/CometChatUIKitSwift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://www.cometchat.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'abhisheksaralaya13' => 'abhishek.saralaya@cometchat.com' }
-  s.source           = { :git => 'https://github.com/abhisheksaralaya13/CometChatUIKitSwift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/cometchat-pro/cometchat-chat-uikit-ios-swift.git', :tag => '4.0.0' }
+  s.swift_version    = '5.0'
 
-  s.ios.deployment_target = '10.0'
+  s.source_files     = 'Sources/Components/**/*.swift'
+  s.resources = 'Resources/**/*.{storyboard,xib,xcassets,png,pdf,ttf}'
+  s.dependency 'CometChatSDK', '4.0.1'
 
-  s.source_files = 'CometChatUIKitSwift/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CometChatUIKitSwift' => ['CometChatUIKitSwift/Assets/*.png']
-  # }
+  s.ios.deployment_target = '13.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+
 end
